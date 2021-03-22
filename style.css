@@ -1,0 +1,118 @@
+* {box-sizing: border-box}
+body {font-family: poppins, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.smallImage{
+  width: 33%;
+  cursor: pointer;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.active, .smallImage:hover {
+  filter: brightness(50%); 
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slideshow{
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.images{
+  display: flex;
+}
+/*---------------------------------------------------------------------------------------*/
+/*Upholstered Sofa*/
+
+.checked {
+  color: #00FA9A ;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+/*BottomPanel*/
+.bottomPanel{
+  width: 100%;
+  margin-top: 2%;
+  display: inline-flex;
+}
